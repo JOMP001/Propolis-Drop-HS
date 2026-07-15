@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Propolis Drops HS — Korean Propolis, Purified by Science</title>
-<meta name="description" content="Propolis Drops HS — Korean propolis refined with WEEP technology, born from R&D with the Korea Atomic Energy Research Institute. 100% water-soluble, alcohol-free. Helps maintain the body's immune system. BPOM TR 256037591 · HALAL.">
+<meta name="description" content="Propolis Drops HS — Korean brown propolis, rich in the flavonoid pinocembrin with over 10 mg/g total flavonoids, refined with WEEP technology developed with the Korea Atomic Energy Research Institute. Water-soluble, alcohol-free. Helps maintain the body's immune system. BPOM TR 256037591 · HALAL.">
 <meta name="theme-color" content="#0E3B32">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,6 +75,7 @@
   .hero-inner{position:relative;z-index:3;width:100%;}
   .hero-grid{display:grid;grid-template-columns:1.12fr 0.88fr;gap:40px;align-items:center;}
   .hero .eyebrow{color:var(--gold-bright);}
+  .kr-accent{display:block;font-size:14px;letter-spacing:0.14em;color:var(--gold-bright);opacity:0.92;margin-bottom:12px;font-weight:500;}
   .hero h1{font-size:clamp(30px,4.6vw,54px);line-height:1.08;margin:16px 0 20px;color:var(--cream);}
   .hero h1 em{color:var(--gold-bright);}
   .hero .lead{font-size:15px;color:rgba(244,238,225,0.9);max-width:480px;margin-bottom:30px;}
@@ -131,6 +132,13 @@
   .weep-letters .wl{text-align:center;flex:1;min-width:120px;background:rgba(244,238,225,0.05);border:1px solid rgba(198,161,91,0.3);border-radius:16px;padding:22px 14px;}
   .weep-letters .wl b{font-family:var(--serif);font-size:38px;color:var(--gold-bright);display:block;line-height:1;margin-bottom:8px;}
   .weep-letters .wl span{font-size:12px;letter-spacing:0.04em;color:rgba(244,238,225,0.82);}
+  /* WEEP process steps */
+  .weep-steps-head{text-align:center;font-family:var(--sans);font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin:0 auto 26px;}
+  .weep-steps{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:0 auto 50px;max-width:960px;}
+  .wstep{text-align:center;position:relative;}
+  .wnum{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold-bright),var(--gold));color:var(--ink);font-family:var(--serif);font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;position:relative;z-index:2;}
+  .wstep h5{font-size:11.5px;color:rgba(244,238,225,0.9);font-weight:600;line-height:1.45;font-family:var(--sans);padding:0 4px;}
+  .wstep:not(:last-child)::after{content:"";position:absolute;top:21px;left:calc(50% + 28px);right:calc(-50% + 28px);height:2px;background:rgba(198,161,91,0.35);z-index:1;}
   .tech-feats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:52px;}
   .tfeat{background:rgba(244,238,225,0.05);border:1px solid rgba(198,161,91,0.28);border-radius:14px;padding:20px 14px;text-align:center;}
   .tfeat .ic{font-size:26px;margin-bottom:10px;}
@@ -267,6 +275,8 @@
     .hero-bottle-wrap{order:-1;} .hero-bottle{height:340px;}
     .hero .lead{margin-left:auto;margin-right:auto;} .hero-cta,.hero-badges{justify-content:center;}
     .tech-feats{grid-template-columns:repeat(2,1fr);}
+    .weep-steps{grid-template-columns:repeat(3,1fr);gap:24px 10px;}
+    .wstep:not(:last-child)::after{display:none;}
     .cert-grid{grid-template-columns:repeat(2,1fr);}
     .who-grid{grid-template-columns:repeat(2,1fr);}
     .steps{grid-template-columns:1fr;}
@@ -316,10 +326,11 @@
   <div class="hero-inner">
     <div class="wrap hero-grid">
       <div>
+        <span class="kr-accent">프로폴리스를 디자인 하다</span>
         <span class="eyebrow en">The Korean Propolis · Purified by Science</span>
         <span class="eyebrow id">Propolis Korea · Dimurnikan oleh Sains</span>
         <h1 class="en">Propolis, as<br>Nature <em>Intended</em>.<br>With Korean <em>Technology</em>.</h1>
-        <h1 class="id">Propolis, Sebagaimana<br>Alam <em>Menciptakannya</em>.<br>dengan <em>Teknologi Korea</em>.</h1>
+        <h1 class="id">Propolis dari Alam dan<br><em>Teknologi Korea</em>.</h1>
         <p class="lead en">Made with WEEP technology — the result of research with the Korea Atomic Energy Research Institute. 100% water-soluble, alcohol-free, to help maintain your body's immune system.</p>
         <p class="lead id">Menggunakan teknologi WEEP — hasil riset bersama Korea Atomic Energy Research Institute. 100% larut air, bebas alkohol, untuk membantu memelihara daya tahan tubuh.</p>
         <div class="hero-cta">
@@ -350,14 +361,14 @@
     <span>Born from R&amp;D with KAERI</span><span class="dot">◆</span>
     <span>100% Water-Soluble</span><span class="dot">◆</span>
     <span>Alcohol-Free</span><span class="dot">◆</span>
-    <span>Rich in Artepillin C</span><span class="dot">◆</span>
+    <span>Pinocembrin · &gt;10 mg/g Flavonoids</span><span class="dot">◆</span>
     <span>BPOM TR 256037591</span><span class="dot">◆</span>
     <span>HALAL</span><span class="dot">◆</span>
     <span>WEEP Technology</span><span class="dot">◆</span>
     <span>Born from R&amp;D with KAERI</span><span class="dot">◆</span>
     <span>100% Water-Soluble</span><span class="dot">◆</span>
     <span>Alcohol-Free</span><span class="dot">◆</span>
-    <span>Rich in Artepillin C</span><span class="dot">◆</span>
+    <span>Pinocembrin · &gt;10 mg/g Flavonoids</span><span class="dot">◆</span>
   </div>
 </div>
 
@@ -382,10 +393,10 @@
           <div class="c"><b>10%</b><span class="en">Other</span><span class="id">Lainnya</span></div>
         </div>
         <div class="origin-note">
-          <span class="eyebrow en">Why Green Propolis</span>
-          <span class="eyebrow id">Mengapa Green Propolis</span>
-          <p class="en">Propolis from Asia and Europe differs chemically from Brazilian <b>green propolis</b> — the latter rich in <b>Artepillin C</b>, one of the most studied compounds in the propolis world. Our formulation is built on this premium green-propolis lineage, refined through Korean technology.</p>
-          <p class="id">Propolis dari Asia dan Eropa berbeda secara kimia dari <b>green propolis</b> Brasil — yang kaya <b>Artepillin C</b>, salah satu senyawa paling banyak diteliti di dunia propolis. Formulasi kami dibangun dari galur green propolis premium ini, disempurnakan dengan teknologi Korea.</p>
+          <span class="eyebrow en">Korean Brown Propolis</span>
+          <span class="eyebrow id">Brown Propolis Korea</span>
+          <p class="en">Propolis takes on the character of its soil, and ours grows in Korea. It's brown propolis, the poplar type, and its main flavonoid is <b>Pinocembrin</b>. What sets our grade apart is how much of it there is: over <b>10 mg/g total flavonoids</b>, roughly ten times a standard grade. You can taste that strength the moment you take it.</p>
+          <p class="id">Rasa propolis ikut tanahnya, dan punya kami tumbuh di Korea. Ini brown propolis, jenis poplar, dengan <b>Pinocembrin</b> sebagai flavonoid utamanya. Yang membuat grade kami beda adalah kadarnya: di atas <b>10 mg/g total flavonoid</b>, sekitar sepuluh kali lipat grade biasa. Kekuatannya langsung terasa begitu diminum.</p>
         </div>
       </div>
       <div class="prop-visual reveal d1">
@@ -393,11 +404,11 @@
           <img src="assets/raw-propolis.png" alt="Raw propolis resin" style="background:linear-gradient(160deg,#f4eee1,#e6dcc8);">
         </div>
         <div class="stat-row">
+          <div class="stat"><b>&gt;10</b><span class="en">mg/g total flavonoids</span><span class="id">mg/g total flavonoid</span></div>
           <div class="stat"><b>300+</b><span class="en">Natural compounds</span><span class="id">Senyawa alami</span></div>
-          <div class="stat"><b>1.2</b><span class="en">mg/g total flavonoid*</span><span class="id">mg/g total flavonoid*</span></div>
           <div class="stat"><b>0%</b><span class="en">Alcohol</span><span class="id">Alkohol</span></div>
         </div>
-        <p style="font-size:11.5px;color:#8a9089;margin-top:8px;"><span class="en">*Verified by laboratory analysis of our propolis extract.</span><span class="id">*Terverifikasi oleh analisis laboratorium ekstrak propolis kami.</span></p>
+        <p style="font-size:11.5px;color:#8a9089;margin-top:8px;"><span class="en">Grade K-100 Korean brown propolis. Total flavonoids confirmed by Certificate of Analysis.</span><span class="id">Grade K-100 brown propolis Korea. Total flavonoid dikonfirmasi oleh Certificate of Analysis.</span></p>
       </div>
     </div>
   </div>
@@ -419,6 +430,15 @@
       <div class="wl"><b>E</b><span class="en">Ethanol-free</span><span class="id">Bebas Etanol</span></div>
       <div class="wl"><b>E</b><span class="en">Extraction</span><span class="id">Ekstraksi</span></div>
       <div class="wl"><b>P</b><span class="en">Process</span><span class="id">Proses</span></div>
+    </div>
+    <div class="weep-steps-head reveal"><span class="en">How WEEP is made · 6 steps</span><span class="id">Bagaimana WEEP dibuat · 6 langkah</span></div>
+    <div class="weep-steps reveal d1">
+      <div class="wstep"><div class="wnum">01</div><h5 class="en">Selecting Propolis Origin</h5><h5 class="id">Pemilihan Asal Propolis</h5></div>
+      <div class="wstep"><div class="wnum">02</div><h5 class="en">Blending &amp; 1st Aging</h5><h5 class="id">Pencampuran &amp; Penuaan Ke-1</h5></div>
+      <div class="wstep"><div class="wnum">03</div><h5 class="en">Filtration</h5><h5 class="id">Filtrasi</h5></div>
+      <div class="wstep"><div class="wnum">04</div><h5 class="en">Made Water-Soluble, Alcohol-Free</h5><h5 class="id">Dibuat Larut Air, Bebas Alkohol</h5></div>
+      <div class="wstep"><div class="wnum">05</div><h5 class="en">2nd Aging &amp; Stabilization</h5><h5 class="id">Penuaan Ke-2 &amp; Stabilisasi</h5></div>
+      <div class="wstep"><div class="wnum">06</div><h5 class="en">Alcohol-Free, Water-Soluble Propolis</h5><h5 class="id">Propolis Bebas Alkohol &amp; Larut Air</h5></div>
     </div>
     <table class="weep-tbl reveal d1">
       <thead>
@@ -477,10 +497,10 @@
       <span class="eyebrow id">Buktikan Sendiri</span>
       <h2 class="en">Trust What You <em>Can See</em></h2>
       <h2 class="id">Percayai yang <em>Bisa Anda Lihat</em></h2>
-      <p class="en">The simplest proof needs no words. Add a few drops to clear water. Ordinary propolis clouds it and sinks to the bottom. Ours dissolves completely — clear from the first drop to the last, with no residue and no waxy film.</p>
-      <p class="id">Bukti paling sederhana tak perlu kata-kata. Teteskan ke air bening. Propolis biasa membuatnya keruh dan mengendap. Milik kami larut sempurna — bening dari tetes pertama hingga terakhir, tanpa residu dan tanpa lapisan lilin.</p>
-      <p class="en">That clarity is not cosmetic. It is the visible sign of a purer extract your body can absorb more easily.</p>
-      <p class="id">Kebeningan itu bukan sekadar tampilan. Itu tanda nyata ekstrak yang lebih murni dan lebih mudah diserap tubuh.</p>
+      <p class="en">The easiest way to see it: drop it into a glass of clear water. Ordinary propolis turns cloudy and settles at the bottom. Ours blends straight in, clear to the bottom, with no residue and no waxy film.</p>
+      <p class="id">Cara paling mudah membuktikannya: teteskan ke segelas air bening. Propolis biasa membuatnya keruh dan mengendap di dasar. Punya kami langsung menyatu, bening sampai ke dasar, tanpa endapan dan tanpa lapisan lilin.</p>
+      <p class="en">That clarity means something. It's what a cleaner, more soluble extract looks like, and the body absorbs it more easily.</p>
+      <p class="id">Kebeningan itu ada artinya. Begitulah wujud ekstrak yang lebih bersih dan lebih larut, yang lebih mudah diserap tubuh.</p>
     </div>
     <div class="reveal d1">
       <div class="glass-row">
@@ -515,35 +535,35 @@
       <span class="id">Seperti yang sudah banyak dikenal, propolis dari alam telah lama digunakan untuk membantu memelihara daya tahan tubuh. Selain itu, propolis dengan berbagai senyawa alaminya masih menyimpan banyak hal menarik untuk dipelajari. Penasaran dengan kandungannya dan apa saja yang sudah diteliti oleh sains? Lihat di bawah ini.</span>
     </p>
     <div class="acc-wrap reveal d2">
-      <details class="acc">
-        <summary><span class="cmp">Artepillin C</span><span class="en">The signature compound of green propolis</span><span class="id">Senyawa unggulan green propolis</span><span class="arrow">+</span></summary>
+      <details class="acc" open>
+        <summary><span class="cmp">Pinocembrin</span><span class="en">What Korean propolis carries most</span><span class="id">Yang paling banyak di propolis Korea</span><span class="arrow">+</span></summary>
         <div class="body">
-          <span class="en">Artepillin C is among the most researched compounds in propolis science. In the research literature it is studied mainly for its <b>antioxidant</b> and natural <b>anti-inflammatory</b> properties.</span>
-          <span class="id">Artepillin C termasuk senyawa yang paling banyak diteliti dalam sains propolis. Dalam literatur riset, ia dipelajari terutama untuk sifat <b>antioksidan</b> dan <b>anti-inflamasi</b> alaminya.</span>
-          <div class="tags"><span class="en">Antioxidant</span><span class="id">Antioksidan</span><span class="en">Anti-inflammatory</span><span class="id">Anti-inflamasi</span></div>
+          <span class="en">Pinocembrin is the flavonoid Korean propolis holds in the highest amount, and it's what gives ours its character. Researchers have looked at it mostly for <b>antibacterial</b>, <b>anti-inflammatory</b>, and <b>antioxidant</b> activity.</span>
+          <span class="id">Pinocembrin adalah flavonoid yang paling banyak dikandung propolis Korea, dan itulah yang memberi ciri khas milik kami. Peneliti banyak menelaahnya untuk sifat <b>antibakteri</b>, <b>anti-inflamasi</b>, dan <b>antioksidan</b>.</span>
+          <div class="tags"><span class="en">Antibacterial</span><span class="id">Antibakteri</span><span class="en">Anti-inflammatory</span><span class="id">Anti-inflamasi</span><span class="en">Antioxidant</span><span class="id">Antioksidan</span></div>
         </div>
       </details>
       <details class="acc">
-        <summary><span class="cmp">Flavonoids</span><span class="en">Pinocembrin, Chrysin &amp; more</span><span class="id">Pinocembrin, Chrysin &amp; lainnya</span><span class="arrow">+</span></summary>
+        <summary><span class="cmp">Flavonoids</span><span class="en">Chrysin, Galangin &amp; more</span><span class="id">Chrysin, Galangin &amp; lainnya</span><span class="arrow">+</span></summary>
         <div class="body">
-          <span class="en">The flavonoids abundant in propolis are widely recognised in research for <b>antioxidant</b> activity — the science behind propolis's long association with wellness and a healthy, well-kept appearance.</span>
-          <span class="id">Flavonoid yang melimpah dalam propolis dikenal luas dalam riset untuk aktivitas <b>antioksidan</b> — dasar ilmiah di balik kaitan panjang propolis dengan kebugaran dan tampilan yang sehat dan terjaga.</span>
+          <span class="en">Alongside Pinocembrin, Korean propolis is rich in other flavonoids like Chrysin and Galangin. In research they're known mostly for <b>antioxidant</b> and <b>anti-inflammatory</b> activity, a big part of why propolis has been trusted for so long.</span>
+          <span class="id">Selain Pinocembrin, propolis Korea kaya flavonoid lain seperti Chrysin dan Galangin. Dalam riset, keduanya dikenal terutama untuk aktivitas <b>antioksidan</b> dan <b>anti-inflamasi</b>, sebagian besar alasan propolis dipercaya sejak lama.</span>
           <div class="tags"><span class="en">Antioxidant</span><span class="id">Antioksidan</span><span class="en">Anti-inflammatory</span><span class="id">Anti-inflamasi</span></div>
         </div>
       </details>
       <details class="acc">
         <summary><span class="cmp">CAPE</span><span class="en">Caffeic Acid Phenethyl Ester</span><span class="id">Caffeic Acid Phenethyl Ester</span><span class="arrow">+</span></summary>
         <div class="body">
-          <span class="en">CAPE is a phenolic compound found in propolis that research has explored for its <b>immune-modulating</b> and antioxidant behaviour — of interest to those who care about their daily defenses.</span>
-          <span class="id">CAPE adalah senyawa fenolik dalam propolis yang diteliti untuk perilaku <b>imunomodulator</b> dan antioksidannya — menarik bagi yang peduli pada daya tahan hariannya.</span>
+          <span class="en">CAPE is a phenolic compound in propolis that research has looked at for <b>immune-modulating</b> and antioxidant behaviour. It tends to interest anyone who pays attention to their daily defenses.</span>
+          <span class="id">CAPE adalah senyawa fenolik dalam propolis yang diteliti untuk perilaku <b>imunomodulator</b> dan antioksidannya. Biasanya menarik bagi yang memperhatikan daya tahan hariannya.</span>
           <div class="tags"><span class="en">Immune-modulating</span><span class="id">Imunomodulator</span><span class="en">Antioxidant</span><span class="id">Antioksidan</span></div>
         </div>
       </details>
       <details class="acc">
         <summary><span class="cmp">Phenolic acids</span><span class="en">Cinnamic &amp; p-Coumaric acid</span><span class="id">Asam sinamat &amp; p-kumarat</span><span class="arrow">+</span></summary>
         <div class="body">
-          <span class="en">These natural acids are studied for their <b>antioxidant</b> and <b>antibacterial</b> properties — part of why propolis has been valued for oral and throat comfort across cultures and centuries.</span>
-          <span class="id">Asam alami ini diteliti untuk sifat <b>antioksidan</b> dan <b>antibakteri</b>-nya — sebagian alasan mengapa propolis dihargai untuk kenyamanan mulut dan tenggorokan lintas budaya dan zaman.</span>
+          <span class="en">These natural acids are studied for <b>antioxidant</b> and <b>antibacterial</b> properties. It's part of why propolis has long been valued for oral and throat comfort.</span>
+          <span class="id">Asam alami ini diteliti untuk sifat <b>antioksidan</b> dan <b>antibakteri</b>. Sebagian alasan mengapa propolis sejak lama dihargai untuk kenyamanan mulut dan tenggorokan.</span>
           <div class="tags"><span class="en">Antioxidant</span><span class="id">Antioksidan</span><span class="en">Antibacterial</span><span class="id">Antibakteri</span><span class="en">Oral &amp; throat comfort</span><span class="id">Kenyamanan mulut &amp; tenggorokan</span></div>
         </div>
       </details>
@@ -569,7 +589,7 @@
         <div class="feat-card"><div class="ic">💧</div><h5 class="en">100% Water-Soluble</h5><h5 class="id">Larut Air 100%</h5><p class="en">Blends instantly and clearly into any drink.</p><p class="id">Menyatu bening seketika ke minuman apa pun.</p></div>
         <div class="feat-card"><div class="ic">🚫</div><h5 class="en">Alcohol-Free</h5><h5 class="id">Bebas Alkohol</h5><p class="en">Reassuring as a daily staple for the family.</p><p class="id">Lebih tenang sebagai stok harian keluarga.</p></div>
         <div class="feat-card"><div class="ic">✨</div><h5 class="en">No Residue</h5><h5 class="id">Tanpa Residu</h5><p class="en">Never sticky, no sediment left behind.</p><p class="id">Tidak lengket, tanpa endapan tersisa.</p></div>
-        <div class="feat-card"><div class="ic">🍯</div><h5 class="en">Signature Taste</h5><h5 class="id">Rasa Khas Propolis</h5><p class="en">WEEP technology keeps propolis's natural characteristic taste.</p><p class="id">Teknologi WEEP tidak mengubah rasa khas alami propolis.</p></div>
+        <div class="feat-card"><div class="ic">🍯</div><h5 class="en">You Can Taste It</h5><h5 class="id">Kekuatannya Terasa</h5><p class="en">A strong flavonoid character that holds up, even mixed into honey or water.</p><p class="id">Karakter flavonoid yang kuat dan tetap terasa, walau dicampur madu atau air.</p></div>
         <div class="feat-card"><div class="ic">🎒</div><h5 class="en">Portable</h5><h5 class="id">Praktis Dibawa</h5><p class="en">A 10 mL dropper that goes anywhere.</p><p class="id">Botol tetes 10 mL, bawa ke mana saja.</p></div>
         <div class="feat-card"><div class="ic">🇰🇷</div><h5 class="en">Korean Technology</h5><h5 class="id">Teknologi Korea</h5><p class="en">Purified by patented WEEP science.</p><p class="id">Dimurnikan oleh sains WEEP berpaten.</p></div>
       </div>
@@ -702,8 +722,8 @@
         <div class="a"><span class="en">Its registered benefit is to <b>help maintain the body's immune system.</b> Taken consistently, it's a simple daily wellness habit.</span><span class="id">Manfaat terdaftarnya adalah <b>membantu memelihara daya tahan tubuh.</b> Diminum rutin, ia menjadi kebiasaan sehat harian yang sederhana.</span></div>
       </details>
       <details class="faq-item">
-        <summary><span class="en">Why is "Korean" propolis better?</span><span class="id">Mengapa propolis "Korea" lebih baik?</span></summary>
-        <div class="a"><span class="en">It's about the <b>technology and processing</b>, not the bees. Our propolis is refined with WEEP — a water-soluble, alcohol-free method born from research with the Korea Atomic Energy Research Institute — which most propolis on the market simply doesn't have.</span><span class="id">Ini soal <b>teknologi dan pengolahan</b>, bukan lebahnya. Propolis kami disempurnakan dengan WEEP — metode larut air, bebas alkohol, yang lahir dari riset bersama Korea Atomic Energy Research Institute — yang tidak dimiliki kebanyakan propolis di pasaran.</span></div>
+        <summary><span class="en">Why "Korean" propolis?</span><span class="id">Mengapa propolis "Korea"?</span></summary>
+        <div class="a"><span class="en">Two reasons. It's grown from Korean soil as brown propolis, naturally high in the flavonoid <b>Pinocembrin</b> and genuinely potent at over <b>10 mg/g total flavonoids</b>. And it's made with <b>WEEP</b>, a water-soluble, alcohol-free process developed with the Korea Atomic Energy Research Institute that most propolis on the market doesn't have.</span><span class="id">Dua alasan. Tumbuh dari tanah Korea sebagai brown propolis, secara alami tinggi flavonoid <b>Pinocembrin</b> dan benar-benar pekat di atas <b>10 mg/g total flavonoid</b>. Dan dibuat dengan <b>WEEP</b>, proses larut air dan bebas alkohol yang dikembangkan bersama Korea Atomic Energy Research Institute, yang tidak dimiliki kebanyakan propolis di pasaran.</span></div>
       </details>
       <details class="faq-item">
         <summary><span class="en">Does it contain alcohol? Is it safe for children?</span><span class="id">Apakah mengandung alkohol? Aman untuk anak?</span></summary>
@@ -711,7 +731,7 @@
       </details>
       <details class="faq-item">
         <summary><span class="en">Can I use it for my mouth and throat?</span><span class="id">Bisakah untuk mulut dan tenggorokan?</span></summary>
-        <div class="a"><span class="en">Many people keep propolis as a daily habit to help maintain the comfort of the mouth and throat — for example, a few drops in warm water. Think of it as upkeep, not a cure for any specific condition.</span><span class="id">Banyak orang menjadikan propolis kebiasaan harian untuk membantu menjaga kenyamanan mulut dan tenggorokan — misalnya beberapa tetes ke air hangat. Anggap sebagai perawatan menjaga, bukan obat untuk kondisi tertentu.</span></div>
+        <div class="a"><span class="en">It's a popular daily habit. Propolis is rich in antibacterial flavonoids like Pinocembrin, which is why many people put a few drops in warm water to help keep the mouth and throat comfortable. Treat it as upkeep, not a cure for any specific condition.</span><span class="id">Ini kebiasaan harian yang populer. Propolis kaya flavonoid antibakteri seperti Pinocembrin, itulah sebabnya banyak orang meneteskannya ke air hangat untuk membantu menjaga kenyamanan mulut dan tenggorokan. Anggap sebagai perawatan menjaga, bukan obat untuk kondisi tertentu.</span></div>
       </details>
       <details class="faq-item">
         <summary><span class="en">How do I take it, and how often?</span><span class="id">Bagaimana cara dan seberapa sering?</span></summary>
@@ -742,7 +762,6 @@
     <p class="warn id">Produk ini adalah Obat Tradisional yang membantu memelihara daya tahan tubuh. Bukan pengganti pengobatan medis profesional. Tidak untuk anak usia di bawah 1 tahun. Hati-hati bagi yang memiliki riwayat alergi produk lebah dan turunannya. Simpan di tempat kering, di bawah suhu 30°C, terhindar dari sinar matahari langsung.</p>
   </div>
 </section>
-
 <!-- ===================== FOOTER ===================== -->
 <footer>
   <div class="wrap">
@@ -764,12 +783,10 @@
     document.getElementById('btn-en').classList.toggle('active',l==='en');
     document.getElementById('btn-id').classList.toggle('active',l==='id');
     document.documentElement.lang=l;
-    // safety: ensure nothing stays hidden after a language switch
     document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
   }
   function toggleMenu(){document.getElementById('navMenu').classList.toggle('open');}
   function closeMenu(){document.getElementById('navMenu').classList.remove('open');}
-  // scroll reveal
   const io=new IntersectionObserver((entries)=>{
     entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
   },{threshold:0.12});
